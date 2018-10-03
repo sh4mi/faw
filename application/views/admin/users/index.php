@@ -20,39 +20,52 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container">
+      <div class="container ">
        
-      <?php echo form_open('user/register/') ;?>
+      <?php echo form_open('user/register/', array('class' => '' ));?>
   <div class="form-group">
-      <label >First Name</label>
-      <input type="text" class="form-control" name="fname">
+      <label class="control-label "  >First Name</label>
+      <input type="text" class="form-control" placeholder="First Name" name="fname">
   </div>
   <div class="form-group">
-      <label >Last name</label>
-      <input type="text" class="form-control" name="lname">
+      <label  class="control-label ">Last name</label>
+      <input type="text" class="form-control" placeholder="Last name" name="lname">
   </div>
   <div class="form-group">
-      <label >Username</label>
-      <input type="text" class="form-control" name="username">
+      <label class="control-label ">Username</label>
+      <input type="text" class="form-control" placeholder="Username" name="username">
   </div>
   <div class="form-group">
-      <label >Email</label>
-      <input type="email" class="form-control" name="email">
+      <label class="control-labelv" >Email</label>
+      <input type="email" class="form-control" placeholder="email" name="email">
   </div>
   <div class="form-group">
-      <label >Password</label>
-      <input type="password" class="form-control" name="password">
+      <label class="control-label ">Password</label>
+      <input type="password" class="form-control" placeholder="Password" name="password">
   </div>
   <div class="form-group">
-      <label >Confirm Password</label>
-      <input type="password" class="form-control" name="password2">
+      <label class="control-label ">Confirm Password</label>
+      <input type="password" class="form-control" placeholder="Confirm Password" name="password2">
   </div>
-  <input type="radio" name="gender" value="male"> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other <br>
-  <input type="submit" name="signup" value="Create" class="btn btn-success">
+  <div class="form-group">
+    <label class="control-label ">Gender</label>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female
+  </div>
+  <div class="form-group">
+      <label for="sel1">Demo Role</label>
+      <select class="form-control" id="sel1">
+        <option>Admin</option>
+        <option>Editor</option>
+        <option>Customer</option>
+        </select>
+</div>
+  <div class="form-group"> 
+    <input type="submit" name="signup" value="Create" class="btn btn-default">
+  </div>
+ 
 </form>
-        
+        <hr>
        
       </div>
       <!-- /.container-fluid -->

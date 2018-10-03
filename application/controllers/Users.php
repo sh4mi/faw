@@ -78,28 +78,7 @@ class Users extends CI_Controller
 		}
 
 	}
-
-	public function my()
-	{	
-		$this->load->view('admin/Template/header');
-		$this->load->view('admin/Template/sidebar');
-		$this->load->view('admin/Template/home');
-		$this->load->view('admin/Template/footer');
-
-	}
-
-	public function create()
-	{	
-		$data=array();
-		$data['title'] = "Add Cars";
-		$this->load->view('admin/Template/header');
-		$this->load->view('admin/Template/sidebar');
-		$this->load->view('admin/users/index');
-		$this->load->view('admin/Template/footer');
-
-	}
-
-	public function logout()
+		public function logout()
 	{
 		$this->session->unset_userdata('logged_in');
 		$this->session->unset_userdata('username');
@@ -140,6 +119,106 @@ class Users extends CI_Controller
 			return false;
 		}
 		
+	}
+
+	public function my()
+	{	
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/Template/home');
+		$this->load->view('admin/Template/footer');
+
+	}
+
+	public function create()
+	{	
+		$data=array();
+		$data['title'] = "Create User";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/index');
+		$this->load->view('admin/Template/footer');
+
+	}
+
+	public function car()
+	{
+		$data=array();
+		$data['title'] = "Add Cars";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/add_car',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function invoice()
+	{
+		$data=array();
+		$data['title'] = "Add Invoice";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/invoice',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function sale()
+	{
+		$data=array();
+		$data['title'] = "Add Sale";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/sale',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function updateSale()
+	{
+		$data=array();
+		$data['title'] = "Update Sale";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/update_sale',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function inventory()
+	{
+		$data=array();
+		$data['title'] = "Add Inventory";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/inventory',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function updateInventory()
+	{
+		$data=array();
+		$data['title'] = "Update Inventory";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/update_inventory',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function delivery()
+	{
+		$data=array();
+		$data['title'] = "Customer Info";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/delivery',$data);
+		$this->load->view('admin/Template/footer');
+	}
+
+	public function deliveryOrder()
+	{
+		$data=array();
+		$data['title'] = "Delivery Order";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/delivery_order',$data);
+		$this->load->view('admin/Template/footer');
 	}
 
 }
