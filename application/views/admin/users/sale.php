@@ -49,38 +49,8 @@
                 <td>4e3b42</td>
                 <td>12345678</td>
             </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>61101-1234567-8</td>
-                <td>V2</td>
-                <td>White</td>
-                <td>4e3b42</td>
-                <td>12345678</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>61101-1234567-8</td>
-                <td>V2</td>
-                <td>White</td>
-                <td>4e3b42</td>
-                <td>12345678</td>
-            </tr>
-            <tr>
-               <td>Tiger Nixon</td>
-                <td>61101-1234567-8</td>
-                <td>V2</td>
-                <td>White</td>
-                <td>4e3b42</td>
-                <td>12345678</td>
-            </tr>
-            <tr>
-                <td>Tiger Nixon</td>
-                <td>61101-1234567-8</td>
-                <td>V2</td>
-                <td>White</td>
-                <td>4e3b42</td>
-                <td>12345678</td>
-            </tr>
+           
+           
             
            
            

@@ -130,6 +130,17 @@ class Users extends CI_Controller
 
 	}
 
+	public function index()
+	{	
+		$data=array();
+		$data['title'] = "Users";
+		$this->load->view('admin/Template/header');
+		$this->load->view('admin/Template/sidebar');
+		$this->load->view('admin/users/home');
+		$this->load->view('admin/Template/footer');
+
+	}
+
 	public function create()
 	{	
 		$data=array();
