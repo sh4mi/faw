@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Inventory</h1>
+            <h1 class="m-0 text-dark">Jobs</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -18,7 +18,7 @@
       <div class="row">
       <div class="col-md-10"></div>
       <div class="col-md-2" align="right">
-      <input type="button" class="form-control btn btn-info" name="add_job" value="Add Inventory"  onclick="showCreateDialog()">
+      <input type="button" class="form-control btn btn-info" name="add_job" value="Add Job"  onclick="showCreateDialog()">
       </div>
       </div>
     
@@ -91,52 +91,26 @@
 
         <div class="modal-header" style="background-color: #3c8dbc;" align="center">
           <button type="button" class="close" data-dismiss="modal"></button>
-          <h4 class="modal-title">Add New Inventory</h4>
+          <h4 class="modal-title">Add Jobs to DB</h4>
         </div>
         <div class="modal-body">
       <div class="container">
-       <div class="form-group">
+        <div class="form-group">
       <label for="name">Name</label>
       <input type="text" class="form-control" id="" placeholder="Enter name" name="name">
     </div>
-    <div class="form-group">
-      <label for="cnic">CNIC</label>
-      <input type="text" class="form-control" id="" placeholder="Enter CNIC #" name="cnic">
-    </div>
-    <div class="form-group">
-      <label for="mob">Mobile</label>
-      <input type="number" class="form-control" id="mob" placeholder="Enter Mobile #" name="mob">
-    </div>
-    
-    <div class="form-group">
-      <label for="">Vehicle</label>
-      <input type="text" class="form-control" id="vehicle" placeholder="Enter Vehicle" name="vehicle">
-    </div>
-     <div class="form-group">
-      <label for="">Booking Number</label>
-      <input type="text" class="form-control" id="vehicle" placeholder="Enter Booking" name="vehicle">
-    </div>
-    <div class="form-group">
-      <label for="sel1">Color</label>
-      <select class="form-control" id="sel1">
-        <option>White</option>
-        <option>Misty Silver</option>
-        <option>Grey Metallic</option>
-        </select>
-</div>
-     <div class="form-group">
-      <label for="">Chassis Number</label>
-      <input type="text" class="form-control" id="vehicle" placeholder="Enter Charges" name="vehicle">
-    </div>
-     <div class="form-group">
-      <label for="">Engine Number</label>
-      <input type="text" class="form-control" id="vehicle" placeholder="Enter Engine No." name="vehicle">
-    </div>
       <div class="form-group">
-      <label for="">Amount</label>
-      <input type="text" class="form-control" id="vehicle" placeholder="Enter Amount" name="">
+      <label for="name">Description</label>
+      <input type="text" class="form-control" id="" placeholder="Enter Description" name="name">
     </div>
-      
+     <div class="form-group">
+      <label for="name">Price</label>
+      <input type="text" class="form-control" id="" placeholder="Enter Price" name="name">
+    </div>
+   
+    
+
+
       </div>
       
       
@@ -163,6 +137,75 @@
   
   
   
+  
+       <div class="modal fade" id="jobs_update_modal" role="dialog"  >
+    <div class="modal-dialog" id="modal-dialog" style="width:100%;">
+    
+      <!-- Modal content-->
+    <form class="form-horizontal" role="form" method="post"  action="<?php //echo base_url().'Welcome/medicines/create/'.$user_id; ?>">
+      <div class="modal-content" id="editCityDialog">
+
+        <div class="modal-header" style="background-color: #3c8dbc;" align="center">
+          <button type="button" class="close" data-dismiss="modal"></button>
+          <h4 class="modal-title">Update Delivery</h4>
+        </div>
+        <div class="modal-body">
+      <div class="container">
+        <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="" placeholder="Enter name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="CNIC">CNIC</label>
+      <input type="text" class="form-control" id="" placeholder="Enter CNIC #" name="cnic">
+    </div>
+    <div class="form-group">
+      <label for="mob">Mobile</label>
+      <input type="number" class="form-control" id="mob" placeholder="Enter Mobile #" name="mob">
+    </div>
+   <div class="form-group">
+      <label for="">Vehicle</label>
+      <input type="text" class="form-control" id="vehicle" placeholder="Enter Vehicle" name="vehicle">
+    </div>
+     <div class="form-group">
+      <label for="sel1">Color</label>
+      <select class="form-control" id="sel1">
+        <option>White</option>
+        <option>Misty Silver</option>
+        <option>Grey Metallic</option>
+        </select>
+</div>
+     <div class="form-group">
+      <label for="">Chassis Number</label>
+      <input type="text" class="form-control" id="vehicle" placeholder="Enter Chassis" name="vehicle">
+    </div>
+     <div class="form-group">
+      <label for="">Engine Number</label>
+      <input type="text" class="form-control" id="vehicle" placeholder="Enter Engine No." name="vehicle">
+    </div>
+      </div>
+      
+      
+      
+        </div>
+    
+    <div class="modal-footer">
+    <div class="row">
+    
+    <div class="col-md-5" align="right" style="padding:0px;">
+    <input type="submit" name="save" id="save" class="form-control btn btn-success" value="Update">
+    </div>
+    <div class="col-md-7">
+    <input type="button" name="cancel" id="cancel" class="form-control btn btn-danger" value="Cancel" data-dismiss="modal">
+
+    </div>
+    </div>
+    </div>
+        
+      </div>
+      </form>
+    </div>
+  </div> 
   
   
   

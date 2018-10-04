@@ -62,15 +62,27 @@
                   <p>Invoice</p>
                 </a>
               </li><li class="nav-item">
-                <a href="<?php echo base_url();?>inventory/" class="nav-link">
+                <a href="<?php echo base_url();?>bookings/" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
-                  <p>Inventory</p>
+                  <p>Booking</p>
                 </a>
               </li>
               </li><li class="nav-item">
-                <a href="<?php echo base_url();?>Jobs/" class="nav-link">
+                <a href="<?php echo base_url();?>Jobs/dbJobs" class="nav-link">
                   <i class="fa fa-circle-o nav-icon"></i>
                   <p>Jobs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>Jobs/" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Open Jobs</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>accounts/" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Accounts</p>
                 </a>
               </li>
           
