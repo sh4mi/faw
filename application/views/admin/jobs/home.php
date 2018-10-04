@@ -18,7 +18,7 @@
       <div class="row">
       <div class="col-md-10"></div>
       <div class="col-md-2" align="right">
-      <input type="button" class="form-control btn btn-info" name="add_job" value="Add Job"  onclick="showCreateDialog()"><br><br>
+      <input type="button" class="form-control btn btn-info" name="add_job" value="Job Card"  onclick="showCreateDialog()"><br><br>
       <input type="button" class="form-control btn btn-info" name="add_job" value="Add Part to Job"  onclick="showCreateDialog2()">
       </div>
    
@@ -51,8 +51,8 @@
                 <tr>
                   <td><?php echo $sr; ?></td>
                   <td><?php //echo $medicine['name']; ?></td>
-                  <td><input type="button" name="edit" class="form-control btn btn-success" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
-                  <td><input type="button" name="delete" class="form-control btn btn-danger" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
+                  <td><input type="button" name="edit" class="form-control btn btn-success btn-sm" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
+                  <td><input type="button" name="delete" class="form-control btn btn-danger btn-sm" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
 
         </tr>
 <?php $sr++; //} ?>
@@ -93,7 +93,7 @@
 
         <div class="modal-header" style="background-color: #3c8dbc;" align="center">
           <button type="button" class="close" data-dismiss="modal"></button>
-          <h4 class="modal-title">Add Job</h4>
+          <h4 class="modal-title">Job Card</h4>
         </div>
         <div class="modal-body">
       <div class="container">
@@ -141,7 +141,7 @@
 
       <div class="form-group">
       <label for="">Description</label>
-      <input type="text" class="form-control" id="vehicle" placeholder="Job Description" name="vehicle">
+      <textarea rows="3" class="form-control" id="vehicle" placeholder="Job Description" name="vehicle"></textarea>
     </div>
 
 

@@ -44,9 +44,9 @@
                         <strong>Vehicle</strong>
                     </p>
                     <p>
-                        <em>vehicle #: ict-345</em>
+                        <em>Vehicle #: ict-345</em>
                         <em>Engine #: 34522677W</em>
-                        <em>chasses #: 3f44-52sad827W</em>
+                        <em>Chasses #: 3f44-52sad827W</em>
                     </p>
                 </div>
             </div>

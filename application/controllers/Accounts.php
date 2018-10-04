@@ -21,6 +21,13 @@ class Accounts extends CI_Controller
 		
 	}
 	
+	public function pass()
+	{
+		$data=array();
+		$data['title'] = "Jobs/Sales";
+		$this->load->view('admin/accounts/pass',$data);
+		
+	}
 
 	
 

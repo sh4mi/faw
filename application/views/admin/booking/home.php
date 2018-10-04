@@ -49,8 +49,8 @@
                 <tr>
                   <td><?php echo $sr; ?></td>
                   <td><?php //echo $medicine['name']; ?></td>
-                  <td><input type="button" name="edit" class="form-control btn btn-success" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
-                  <td><input type="button" name="delete" class="form-control btn btn-danger" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
+                  <td><input type="button" name="edit" class="form-control btn btn-success btn-sm" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
+                  <td><input type="button" name="delete" class="form-control btn btn-danger btn-sm" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
 
         </tr>
 <?php $sr++; //} ?>
