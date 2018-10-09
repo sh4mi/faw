@@ -92,6 +92,30 @@
                   <p>Gatepass</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>inventory/" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Inventory</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>purchases/" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Purchases</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>roles/" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Roles</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="<?php echo base_url();?>roles/permissions" class="nav-link">
+                  <i class="fa fa-circle-o nav-icon"></i>
+                  <p>Permissions</p>
+                </a>
+              </li>
           
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">

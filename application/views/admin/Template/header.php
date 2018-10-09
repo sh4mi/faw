@@ -60,7 +60,9 @@
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       
-      
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="<?php echo base_url(); ?>users/logout" class="nav-link">Logout</a>
+      </li>
       <!-- Notifications Dropdown Menu -->
       <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
