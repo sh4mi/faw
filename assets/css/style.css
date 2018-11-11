@@ -1,0 +1,17 @@
+.bg-my
+{
+	    background-color: #234273;
+    color: white !important;
+}
+
+.bg-my > ul > li > a 
+{
+	color: white !important;
+}
+
+.btn-my{
+    color: #fff;
+    background-color: #234273;
+    border-color: #234273;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+}

@@ -18,7 +18,7 @@
       <div class="row">
       <div class="col-md-10"></div>
       <div class="col-md-2" align="right">
-      <input type="button" class="form-control btn btn-info" name="add_job" value="Add New User"  onclick="showCreateDialog()">
+      <input type="button" class="form-control btn btn-my" name="add_job" value="Add User"  onclick="showCreateDialog()">
       </div>
       </div>
     
@@ -36,8 +36,11 @@
                 <tr>
                   <th>Sr No.</th>
                   <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+                  <th>Email</th>
+                  <th>Roles</th>
+                  <th>Date</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -49,6 +52,9 @@
                 <tr>
                   <td><?php echo $sr; ?></td>
                   <td><?php //echo $medicine['name']; ?></td>
+                   <td><?php //echo $medicine['name']; ?></td>
+                    <td><?php //echo $medicine['name']; ?></td>
+                     <td><?php //echo $medicine['name']; ?></td>
                   <td><input type="button" name="edit" class="form-control btn btn-success btn-sm" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
                   <td><input type="button" name="delete" class="form-control btn btn-danger btn-sm" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
 
@@ -59,8 +65,11 @@
                 <tr>
                   <th>Sr No.</th>
                   <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+                  <th>Username</th>
+                  <th>Roles</th>
+                  <th>Date</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
                 </tr>
                 </tfoot>
               </table>
@@ -89,42 +98,41 @@
     <form class="form-horizontal" role="form" method="post"  action="<?php //echo base_url().'Welcome/medicines/create/'.$user_id; ?>">
       <div class="modal-content" id="editCityDialog">
 
-        <div class="modal-header" style="background-color: #3c8dbc;" align="center">
+        <div class="modal-header" style="background-color: #112139;color: white;border: 2px solid;" align="center">
           <button type="button" class="close" data-dismiss="modal"></button>
-          <h4 class="modal-title">Add New User</h4>
+          <h4 class="modal-title">Add User</h4>
         </div>
         <div class="modal-body">
       <div class="container">
-         <div class="form-group">
-      <label class="control-label "  >First Name</label>
-      <input type="text" class="form-control" placeholder="First Name" name="fname">
-  </div>
-  <div class="form-group">
-      <label  class="control-label ">Last name</label>
-      <input type="text" class="form-control" placeholder="Last name" name="lname">
-  </div>
-  <div class="form-group">
+        <div class="row">
+       
+
+  <div class="form-group" style="margin: 5px 10px;">
       <label class="control-label ">Username</label>
       <input type="text" class="form-control" placeholder="Username" name="username">
   </div>
-  <div class="form-group">
+  <div class="form-group" style="margin: 5px 10px;">
       <label class="control-labelv" >Email</label>
       <input type="email" class="form-control" placeholder="email" name="email">
   </div>
-  <div class="form-group">
+</div>
+  <div class="row">
+  <div class="form-group" style="margin: 5px 10px;">
       <label class="control-label ">Password</label>
       <input type="password" class="form-control" placeholder="Password" name="password">
   </div>
-  <div class="form-group">
+  <div class="form-group" style="margin: 5px 10px;">
       <label class="control-label ">Confirm Password</label>
       <input type="password" class="form-control" placeholder="Confirm Password" name="password2">
   </div>
-  <div class="form-group">
+</div>
+<div class="row">
+  <div class="form-group" style="margin: 5px 10px;">
     <label class="control-label ">Gender</label>
   <input type="radio" name="gender" value="male"> Male
   <input type="radio" name="gender" value="female"> Female
   </div>
-  <div class="form-group">
+  <div class="form-group" style="margin: 5px 40px;">
       <label for="sel1">Demo Role</label>
       <select class="form-control" id="sel1">
         <option>Admin</option>
@@ -132,6 +140,8 @@
         <option>Customer</option>
         </select>
 </div>
+</div>
+  
       </div>
       
       

@@ -18,7 +18,7 @@
       <div class="row">
       <div class="col-md-10"></div>
       <div class="col-md-2" align="right">
-      <input type="button" class="form-control btn btn-info" name="add_job" value="Add Job"  onclick="showCreateDialog()">
+      <input type="button" class="form-control btn btn-my" name="add_job" value="Add Job"  onclick="showCreateDialog()">
       </div>
       </div>
     
@@ -28,10 +28,10 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container  col-sm-6">
+      <div class="container  col-sm-8">
     
   <?php $sr = 1; ?>
-          <table id="example1" class="table table-bordered table-striped">
+          <table id="example1" class="table table-bordered table-striped datatable-button-html5-basic">
                 <thead>
                 <tr>
                   <th>Sr No.</th>
@@ -89,7 +89,7 @@
     <form class="form-horizontal" role="form" method="post"  action="<?php //echo base_url().'Welcome/medicines/create/'.$user_id; ?>">
       <div class="modal-content" id="editCityDialog">
 
-        <div class="modal-header" style="background-color: #3c8dbc;" align="center">
+        <div class="modal-header" style="background-color: #112139;color: white;border: 2px solid;" align="center">
           <button type="button" class="close" data-dismiss="modal"></button>
           <h4 class="modal-title">Add Jobs to DB</h4>
         </div>

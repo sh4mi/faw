@@ -39,7 +39,7 @@ class Users extends CI_Controller
 
 		if($this->session->userdata('logged_in'))
 		{
-			redirect('user/my');
+			redirect('users/');
 		}
 		$data['title']='Login';
 		
@@ -80,7 +80,7 @@ class Users extends CI_Controller
 				redirect('user/login');
 			}
 			
-			redirect('users/my');
+			redirect('users/');
 		}
 
 	}
@@ -144,9 +144,16 @@ class Users extends CI_Controller
 	{	
 		$data=array();
 		$data['title'] = "Users";
+		redirect('bookings/');
+
+	}
+	public function manage()
+	{	
+		$data=array();
+		$data['title'] = "Users";
 		$this->load->view('admin/Template/header');
 		$this->load->view('admin/Template/sidebar');
-		$this->load->view('admin/users/home');
+		$this->load->view('admin/users/home',$data);
 		$this->load->view('admin/Template/footer');
 
 	}

@@ -13,7 +13,7 @@ class Accounts extends CI_Controller
 		$this->load->view('admin/Template/footer');
 	}
 
-	public function print()
+	public function print_account()
 	{
 		$data=array();
 		$data['title'] = "Jobs/Sales";
@@ -21,7 +21,7 @@ class Accounts extends CI_Controller
 		
 	}
 	
-	public function pass()
+	public function gatepass()
 	{
 		$data=array();
 		$data['title'] = "Jobs/Sales";

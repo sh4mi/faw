@@ -1,8 +1,8 @@
  <footer class="main-footer">
-    <strong>Copyright &copy; 2014-2018 <a href="http://adminlte.io">AdminLTE.io</a>.</strong>
+    <strong>Copyright &copy; 2018 <a href="http://www.mdeuxsolutions.com">Mdeux Solutions</a>.</strong>
     All rights reserved.
     <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.0.0-alpha
+      
     </div>
   </footer>
 
@@ -51,5 +51,30 @@
 <script src="<?php echo base_url();?>assets/dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="<?php echo base_url();?>assets/dist/js/demo.js"></script>
+
+
+        <script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/plugins/tables/datatables/datatables.min.js"></script>
+<script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/plugins/forms/selects/select2.min.js"></script>
+
+<script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/plugins/tables/datatables/extensions/jszip/jszip.min.js"></script>
+<script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/plugins/tables/datatables/extensions/pdfmake/pdfmake.min.js"></script>
+<script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/plugins/tables/datatables/extensions/pdfmake/vfs_fonts.min.js"></script>
+<script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/plugins/tables/datatables/extensions/buttons.min.js"></script>
+<script type="text/javascript"
+        src="<?php echo base_url(); ?>assets/js/pages/datatables_extension_buttons_html5.js"></script>
+           <script type="text/javascript"
+                src="<?php echo base_url(); ?>assets/js/plugins/forms/styling/switchery.min.js"></script>
+        <script type="text/javascript"
+                src="<?php echo base_url(); ?>assets/js/plugins/forms/styling/switch.min.js"></script>
+        <script type="text/javascript"
+                src="<?php echo base_url(); ?>assets/js/plugins/forms/inputs/touchspin.min.js"></script>
+        <script type="text/javascript"
+                src="<?php echo base_url(); ?>assets/js/pages/form_checkboxes_radios.js"></script>
 </body>
 </html>

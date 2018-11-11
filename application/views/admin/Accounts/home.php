@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Jobs/Sales</h1>
+            <h1 class="m-0 text-dark">Accounts</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
@@ -17,9 +17,9 @@
     
       <div class="row">
       <div class="col-md-10"></div>
-      <div class="col-md-2" align="right">
-      <input type="button" class="form-control btn btn-info" name="add_job" value="print view demo"  onclick="showCreateDialog()"><br><br>
-      <input type="button" class="form-control btn btn-info" name="add_job" value="Customer Bill"  onclick="showCreateDialog2()">
+      <div class="col-md-6" align="right">
+      <a href="<?php echo base_url();?>accounts/print_account"><input type="button" class="form-control btn btn-my col-md-3" name="add_job" value="print view demo" >
+      <input type="button" class="form-control btn btn-my col-md-3" name="add_job" value="Customer Bill"  onclick="showCreateDialog2()">
       </div>
       </div>
     
@@ -29,7 +29,7 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="container  col-sm-6">
+      <div class="container  col-sm-12">
     
    <ul class="nav nav-pills">
                   <li class="nav-item"><a class="nav-link active show" href="#sales" data-toggle="tab">Sales</a></li>
@@ -41,13 +41,21 @@
     <div id="sales" class="active tab-pane fade active show ">
       
   <?php $sr = 1; ?>
-          <table id="example1" class="table table-bordered table-striped">
+          <table id="example1" class="table table-bordered table-striped datatable-button-html5-basic">
                 <thead>
-                <tr>
+               <tr>
                   <th>Sr No.</th>
                   <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+                  <th>CNIC</th>
+                  <th>Mobile</th>
+                  <th>Vehicle</th>
+                  <th>Booking number</th>
+                  <th>Color</th>
+                  <th>Chassis number</th>
+                  <th>Engine number</th>
+                  <th>Amount</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -59,20 +67,22 @@
                 <tr>
                   <td><?php echo $sr; ?></td>
                   <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+                  <td><?php //echo $medicine['name']; ?></td>
+
                   <td><input type="button" name="edit" class="form-control btn btn-success btn-sm" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
                   <td><input type="button" name="delete" class="form-control btn btn-danger btn-sm" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
 
         </tr>
 <?php $sr++; //} ?>
                 </tbody>
-                <tfoot>
-                <tr>
-                  <th>Sr No.</th>
-                  <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
-                </tr>
-                </tfoot>
+               
               </table>
    
     </div>
@@ -81,11 +91,19 @@
   <?php $sr = 1; ?>
           <table id="example1" class="table table-bordered table-striped">
                 <thead>
-                <tr>
+                 <tr>
                   <th>Sr No.</th>
                   <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
+                  <th>CNIC</th>
+                  <th>Mobile</th>
+                  <th>Vehicle</th>
+                  
+                  <th>Color</th>
+                  <th>Chassis number</th>
+                  <th>Engine number</th>
+                  <th>Job</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -97,20 +115,21 @@
                 <tr>
                   <td><?php echo $sr; ?></td>
                   <td><?php //echo $medicine['name']; ?></td>
+                   <td><?php //echo $medicine['name']; ?></td>
+                    <td><?php //echo $medicine['name']; ?></td>
+                     <td><?php //echo $medicine['name']; ?></td>
+                      <td><?php //echo $medicine['name']; ?></td>
+                       <td><?php //echo $medicine['name']; ?></td>
+                        <td><?php //echo $medicine['name']; ?></td>
+                         <td><?php //echo $medicine['name']; ?></td>
+                         
                   <td><input type="button" name="edit" class="form-control btn btn-success btn-sm" onclick="showDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Edit"></td>
                   <td><input type="button" name="delete" class="form-control btn btn-danger btn-sm" onclick="showDeleteDialog('<?php //echo $user_id; ?>','<?php //echo $medicine_id; ?>')" Value="Delete"></td>
 
         </tr>
 <?php $sr++; //} ?>
                 </tbody>
-                <tfoot>
-                <tr>
-                  <th>Sr No.</th>
-                  <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
-                </tr>
-                </tfoot>
+                
               </table>
    
     </div>
@@ -141,14 +160,7 @@
         </tr>
 <?php $sr++; //} ?>
                 </tbody>
-                <tfoot>
-                <tr>
-                  <th>Sr No.</th>
-                  <th>Name</th>
-          <th>Edit</th>
-          <th>Delete</th>
-                </tr>
-                </tfoot>
+               
               </table>
   
     </div>
